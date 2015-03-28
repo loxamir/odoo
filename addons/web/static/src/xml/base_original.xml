@@ -85,7 +85,7 @@
                     </div>
                 </div>
                 <p class="oe_grey" style="margin: 10px">
-                    Fill in this form to create an Rex database. You can
+                    Fill in this form to create an Odoo database. You can
                     create databases for different companies or for different
                     goals (testing, production). Once the database is created,
                     you will be able to install your first application.
@@ -112,7 +112,7 @@
                         <td class="oe_form_group_cell">
                             <span class="oe_form_field oe_form_field_boolean oe_grey" >
                                 <input type="checkbox" name="demo_data" />
-                                Check this box to evaluate Rex.
+                                Check this box to evaluate Odoo.
                             </span>
                         </td>
                     </tr>
@@ -365,7 +365,8 @@
             </a>
             <ul class="dropdown-menu">
                 <li><a href="#" data-menu="settings">Preferences</a></li>
-                <li><a href="#" data-menu="about">About Rex</a></li>
+                <li><a href="#" data-menu="account">My Odoo.com account</a></li>
+                <li><a href="#" data-menu="about">About Odoo</a></li>
                 <li><a href="#" data-menu="help">Help</a></li>
                 <li><a href="#" data-menu="logout">Log out</a></li>
             </ul>
@@ -382,73 +383,64 @@
             <div class="row">
                 <div class="col-sm-offset-2 col-md-offset-2 col-sm-8 col-md-8 user-details">
                     <div class="user-image">
-                        <img src="/rex_theme/static/src/img/logo.png" alt="Rex" title="Rex" class="img-circle"/>
+                        <img src="/web/static/src/img/logo2.png" alt="Odoo (Formerly OpenERP)" title="Odoo (Formerly OpenERP)" class="img-circle"/>
                     </div>
                     <div class="user-info-block">
                         <div class="user-heading">
-                            <br/><span class="help-block"><!--Rossa S.A.--></span><br/>
-                            <h3>Sistema Rex Version 1.0</h3>
+                            <br/><span class="help-block">(Formerly OpenERP)</span>
+                            <h3>Version <t t-esc="version_info.server_version"/></h3>
                         </div>
 
-
                         <ul class="list-inline text-center navigation">
-                            <!--li class="active"-->
+                            <li class="active">
                                 <a data-toggle="tab" href="#settings">
-                                    <span class=""></span>
+                                    <span class="glyphicon glyphicon-cog"></span>
                                 </a>
-                            <!--/li-->
-                            <!-- Comentado
+                            </li>
                             <li>
                                 <a data-toggle="tab" href="#email">
                                     <span class="glyphicon glyphicon-envelope"></span>
                                 </a>
                             </li>
-
                             <li>
                                 <a data-toggle="tab" href="#events">
                                     <span class="glyphicon glyphicon-calendar"></span>
                                 </a>
-                            </li>                            
+                            </li>
                              <li>
                                 <a data-toggle="tab" href="#social">
                                     <span class="glyphicon glyphicon-share"></span>
                                 </a>
                             </li>
-                            -->
                         </ul>
                         <div class="user-body">
                             <div class="tab-content">
                                 <div id="settings" class="tab-pane active">
-                                    <h4>Copyright © Rossa S.A. All Rights Reserved.</h4>
-                                    <p>Rex is a trademark of the <a target="_blank" href="https://www.rossa.com.py" style="text-decoration: underline;">Rossa S.A.</a></p>
-                                    <p>For more information visit <a target="_blank" href="https://www.rex.com.py" style="text-decoration: underline;">www.rex.com.py</a></p>
-                                    <h4>Rossa S.A.</h4>
-                                    <p>
-                                        Av. 14 de mayo<br/>
-                                        Santa Rita - Alto Parana <br/>
-                                        Paraguay
-                                    </p>
+                                    <h4>Copyright © 2004-TODAY OpenERP SA. All Rights Reserved.</h4>
+                                    <p>Odoo is a trademark of the <a target="_blank" href="https://www.odoo.com" style="text-decoration: underline;">OpenERP SA Company</a>.</p>
+                                    <p>Licenced under the terms of <a target="_blank" href="http://www.gnu.org/licenses/agpl.html" style="text-decoration: underline;">GNU Affero General Public License</a></p>
+                                    <p>For more information visit <a target="_blank" href="https://www.odoo.com" style="text-decoration: underline;">Odoo.com</a></p>
                                 </div>
                                 <div id="email" class="tab-pane">
-                                    <h4>Rossa S.A.</h4>
+                                    <h4>OpenERP S.A.</h4>
                                     <p>
-                                        Av. 14 de mayo<br/>
-                                        Santa Rita - Alto Parana <br/>
-                                        Paraguay
+                                        Chaussée de Namur 40<br/>
+                                        1367 Grand-Rosière <br/>
+                                        Belgium
                                     </p>
                                     <!-- TODO - ALIAS contactus -->
-                                    <a class='btn btn-link' href='https://www.rex.com.py/contacto'>Our website</a>
+                                    <a class='btn btn-link' href='https://www.odoo.com/web/about/contactus'>Our website</a>
                                 </div>
                                 <div id="events" class="tab-pane">
-                                    <h4>Discover Events of Rex around the world...</h4>
-                                    <a class='btn btn-link' href='https://www.rex.com.py/event'> Our next Events</a>
+                                    <h4>Discover Events of Odoo around the world...</h4>
+                                    <a class='btn btn-link' href='https://www.odoo.com/web/about/event'> Our next Events</a>
                                 </div>
                                 <div id="social" class="tab-pane">
                                     <h4>Follow Us...</h4>
-                                    <a href="https://www.rex.com.py/web/about/facebook"><i class="fa fa-facebook-square fa-3x social-fb"></i></a>
-                                    <a href="https://www.rex.com.py/web/about/twitter"><i class="fa fa-twitter-square fa-3x social-tw"></i></a>
-                                    <a href="https://www.rex.com.py/web/about/googleplus"><i class="fa fa-google-plus-square fa-3x social-gp"></i></a>
-                                    <a href="https://www.rex.com.py/web/about/linkedin"><i class="fa fa-linkedin-square fa-3x social-lk"></i></a>
+                                    <a href="https://www.odoo.com/web/about/facebook"><i class="fa fa-facebook-square fa-3x social-fb"></i></a>
+                                    <a href="https://www.odoo.com/web/about/twitter"><i class="fa fa-twitter-square fa-3x social-tw"></i></a>
+                                    <a href="https://www.odoo.com/web/about/googleplus"><i class="fa fa-google-plus-square fa-3x social-gp"></i></a>
+                                    <a href="https://www.odoo.com/web/about/linkedin"><i class="fa fa-linkedin-square fa-3x social-lk"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -535,13 +527,13 @@
         </div>
     </div>
 </t>
-<!-- Commentado por duplicar o menu do "modo desenvolvedor" 
-<t t-name="ViewManagerDebug">
-    <t t-name="ViewManagerAction" t-extend="ViewManager">
-        <t t-jquery="h2.oe_view_title" t-operation="before">
-            <select t-if="widget.session.debug" class="oe_debug_view"/>
-        </t>
+
+<t t-name="ViewManagerAction" t-extend="ViewManager">
+    <t t-jquery="h2.oe_view_title" t-operation="before">
+        <select t-if="widget.session.debug" class="oe_debug_view"/>
     </t>
+</t>
+<t t-name="ViewManagerDebug">
     <option value="">Debug View#<t t-esc="view.fields_view.view_id"/></option>
     <t t-if="view_manager.active_view === 'form'">
         <option value="get_metadata">View Metadata</option>
@@ -561,7 +553,7 @@
         <option value="edit_workflow">Edit Workflow</option>
         <option value="print_workflow">Print Workflow</option>
     </t>
-</t-->
+</t>
 <t t-name="ViewManagerDebugViewLog">
     <div class="oe_debug_view_log">
         <table class="table table-condensed table-striped">
@@ -572,6 +564,10 @@
             <tr>
                 <th>XML ID:</th>
                 <td><t t-esc="perm.xmlid or '/'"/></td>
+            </tr>
+            <tr>
+                <th>No Update:</th>
+                <td><t t-esc="perm.noupdate"/></td>
             </tr>
             <tr>
                 <th>Creation User:</th>
@@ -797,18 +793,16 @@
         <button type="button" name="delete" class="oe_i">d</button>
     </td>
 </tr>
-<!-- Comentado porque duplicava o botao Descartar
 <t t-extend="ListView.buttons">
     <t t-jquery="button.oe_list_add" t-operation="after">
         <button class="oe_button oe_list_save oe_highlight"
                 type="button">Save</button>
         <span class="oe_alternative">
             <span class="oe_fade">or</span>
-            <a href="#" class="oe_bold oe_list_discard">Discart</a>
+            <a href="#" class="oe_bold oe_list_discard">Discard</a>
         </span>
     </t>
 </t>
--->
 <button t-name="ListView.row.text_button" type="button"
         t-att-title="widget.string" t-att-disabled="disabled || undefined"
         t-att-class="disabled ? 'oe_list_button_disabled btn_txt oe_link' : 'btn_txt oe_link'"
@@ -1066,9 +1060,10 @@
     <ul style="list-style: none; padding-left: 2px; display: inline-block;">
         <t t-foreach="widget.priorities" t-as="rec" >
             <li t-att-data-value="rec.click_value" style="display: inline-block;">
-                <a href="#" t-att-title="rec.name">
+                <a t-if="!widget.get('readonly')" href="#" t-att-title="rec.name">
                     <span t-att-class="widget.get('value') gte rec.value and 'oe_e oe_star_on' or 'oe_e oe_star_off'">7</span>
                 </a>
+                <span t-if="widget.get('readonly')" t-att-title="rec.name" t-att-class="widget.get('value') gte rec.value and 'oe_e oe_star_on' or 'oe_e oe_star_off'">7</span>
             </li>
         </t>
     </ul>
@@ -1918,6 +1913,7 @@
     </select>
     <button class="oe_button oe_export_button_export" id="delete_export_list" type="button">Delete</button>
 </t>
+
 <t t-name="ImportView">
     <a id="importview" href="javascript: void(0)" style="text-decoration: none;color: #3D3D3D;">Import</a>
 </t>
@@ -1985,7 +1981,6 @@
         </tr>
     </table>
 </t>
-
 <t t-name="ImportView.error">
     <p style="white-space:pre;">The import failed due to:<t t-esc="error.message"/></p>
     <t t-if="error.preview">
@@ -1993,7 +1988,6 @@
         <pre><t t-esc="error.preview"/></pre>
     </t>
 </t>
-
 <div t-name="Many2ManyKanban.quick_create" class="oe_kanban_quick_create">
     <input t-att-placeholder="_t('Type name to search')"/>
 </div>
@@ -2016,7 +2010,7 @@
     <button class="oe_form_m2o_sc_button oe_button">Create and edit</button> or
     <button class="oe_form_m2o_cancel_button oe_button oe_link"><span>Cancel</span></button>
 </t>
-<!--t t-name="FieldMonetary" t-extend="FieldChar">
+<t t-name="FieldMonetary" t-extend="FieldChar">
     <t t-jquery="t:first" t-operation="before">
         <t t-if="widget.get('currency_info') and widget.get('currency_info').position === 'before'">
             <t t-esc="widget.get('currency_info').symbol"/>
@@ -2027,7 +2021,7 @@
             <t t-esc="widget.get('currency_info').symbol"/>
         </t>
     </t>
-</t-->
+</t>
 <t t-name="FieldMany2ManyCheckBoxes">
     <t t-foreach="widget.get('records')" t-as="record">
         <div>
